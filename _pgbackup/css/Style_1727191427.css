@@ -96,6 +96,7 @@ body {
 
 .center-image {
     width: 50%;
+    height: auto;
 }
 
 .text-column {
@@ -116,7 +117,8 @@ body {
     }
 
     .center-image {
-        width: 20%;
+        width: 50%;
+        height: 100%;
         object-fit: cover;
     }
 
