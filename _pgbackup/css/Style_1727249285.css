@@ -13,7 +13,6 @@ body {
 }
 
 .header-banner {
-    font-size: 20px;
     background-color: var(--primary-color);
     color: black;
     padding: 20px;
@@ -27,12 +26,6 @@ body {
     justify-content: space-between;
 }
 
-.underlineit {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    t
-
-}
 .header-name-container {
     display: flex;
     flex-direction: row;
@@ -99,14 +92,15 @@ body {
 }
 
 .scroll-text {
-    white-space: 10px;
+    white-space: nowrap;
     display: block;
     -webkit-text-stroke: 1px white;
     transform: translateX(-30%);
-    font-size: 96px;
+    font-size: 4rem;
     font-weight: 900;
     white-space: nowrap;
     position: translateX(-30%);
+    line-height: 10px;
     color: var(--primary-gray);
     transform: scaleY(250%);
 }
