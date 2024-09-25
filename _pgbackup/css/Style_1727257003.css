@@ -74,7 +74,6 @@ body {
 }
 
 .header-icon {
-    width: 28px;
     height: 28px;
 }
 
@@ -101,12 +100,13 @@ body {
     font-family: Bebas Neue;
     display: block;
     -webkit-text-stroke: 1px #FFF;
-    transform: translateX(-50%);
-    font-size: 156px;
+    transform: translateX(-30%);
+    font-size: 96px;
     font-weight: 200;
     white-space: nowrap;
     position: relative;
     color: var(--primary-gray);
+    transform: scaleY(250%);
 }
 
 .non-transparent {
@@ -119,13 +119,13 @@ body {
 }
 
 #text1 {
-    margin-top: -340px;
-    z-index: -1;
+    margin-top: -200px;
+    z-index: 0;
     position: relative;
 }
 
 #text2 {
-    margin-top: 32px;
+    margin-top: 96px;
     z-index: 2;
     position: relative;
 }

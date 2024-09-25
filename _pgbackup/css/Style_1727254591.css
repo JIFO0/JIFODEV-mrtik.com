@@ -16,12 +16,12 @@ body {
     font-size: 20px;
     background-color: var(--primary-color);
     color: black;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
 }
 
 .header {
-    margin: 40px;
+    margin: 3% 3% 0 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,8 +30,9 @@ body {
 .underlineit {
     text-decoration: underline;
     text-underline-offset: 2px;
-}
+    t
 
+}
 .header-name-container {
     display: flex;
     flex-direction: row;
@@ -41,16 +42,16 @@ body {
 .header-dot {
     background-color: var(--primary-color);
     border-radius: 90%;
-    margin: 4px 0 0 0;
+    margin: 0 0 0 0;
     vertical-align: middle;
-    width: 16px;
-    height: 16px;
+    width: 28px;
+    height: 28px;
 }
 
 .header-name {
-    margin: 3px 0 0 8px;
+    margin: 1px 0 0 16px;
     width: 100%;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: bold;
     vertical-align: middle;
 }
@@ -74,39 +75,40 @@ body {
 }
 
 .header-icon {
-    width: 28px;
     height: 28px;
 }
 
-.hero-container {
-    position: relative;
-    width: 50%;
+.start-container {
+    max-width: 1300px;
+    position: absolute;
     top: 200px;
     left: 0;
     right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 1;
 }
 
-.hero-desc {
-    margin-top: 300px;
-    width: 50%;
-    font-size: 18px;
+.start-desc {
+    width: 40%;
+    position: absolute;
+    top: 23%;
+    left: 7%;
+    font-size: 1.3rem;
     line-height: 2rem;
 }
 
 .scroll-text {
-    font-family: Bebas Neue;
+    white-space: 10px;
     display: block;
-    -webkit-text-stroke: 1px #FFF;
-    transform: translateX(-50%);
-    font-size: 156px;
-    font-weight: 200;
+    -webkit-text-stroke: 1px white;
+    transform: translateX(-30%);
+    font-size: 96px;
+    font-weight: 900;
     white-space: nowrap;
-    position: relative;
+    position: translateX(-30%);
     color: var(--primary-gray);
+    transform: scaleY(250%);
 }
 
 .non-transparent {
@@ -115,17 +117,44 @@ body {
 }
 
 .transparent {
+    color: var(--primary-gray);
     -webkit-text-stroke: 1px white;
 }
 
 #text1 {
-    margin-top: -340px;
-    z-index: -1;
-    position: relative;
+    top: 40%;
+    z-index: 0;
 }
 
 #text2 {
-    margin-top: 32px;
+    top: 80%;
     z-index: 2;
-    position: relative;
+}
+
+.center-image-container {
+    margin-left: 45%;
+    overflow: visible;
+    width: 100%;
+    z-index: 1;
+}
+
+.center-image {
+    height: 45vw;
+    width: 40vw;
+}
+
+.center-contact-btn {
+    width: 13vw;
+    height: 13vw;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 30%;
+    left: 77%;
+    font-size: 2rem;
+    z-index: 2;
+    color: black;
 }
