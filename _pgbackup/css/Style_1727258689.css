@@ -98,12 +98,12 @@ body {
 }
 
 .scroll-text {
-    transform: translateX(-20%) scaleY(1.2);
     font-family: Bebas Neue;
     display: block;
     -webkit-text-stroke: 1px #FFF;
+    transform: translateX(-50%);
     font-size: 156px;
-    font-weight: 900;
+    font-weight: 200;
     white-space: nowrap;
     position: relative;
     color: var(--primary-gray);
@@ -111,53 +111,21 @@ body {
 
 .non-transparent {
     color: white;
-    -webkit-text-stroke: 0.5px #FFF;
+    -webkit-text-stroke: 1px white;
 }
 
 .transparent {
-    -webkit-text-stroke: 0.2px #FFF;
-}
-
-.heading1-animated-top::before {
-    content: "SPRZEDAŻ / MARKETING / ENERGIA / SIEĆ /";
-    position: absolute;
-    margin-left: -6.25em;
     -webkit-text-stroke: 1px white;
-    -webkit-text-fill-color: transparent;
-}
-
-.heading1-animated-top::after {
-    content: "SPRZEDAŻ / MARKETING / ENERGIA / SIEĆ / SPRZEDAŻ / MARKETING /";
-    position: absolute;
-    margin-left: 0.09em;
-    -webkit-text-stroke: 1px white;
-    -webkit-text-fill-color: transparent;
-}
-
-.heading1-animated-bottom::before {
-    content: "SPRZEDAŻ / MARKETING / ENERGIA / SIEĆ /";
-    position: absolute;
-    margin-left: -6.25em;
-    -webkit-text-stroke: 1px white;
-    -webkit-text-fill-color: transparent;
-}
-
-.heading1-animated-bottom::after {
-    content: "SPRZEDAŻ / MARKETING / ENERGIA / SIEĆ / SPRZEDAŻ / MARKETING /";
-    position: absolute;
-    margin-left: 0.09em;
-    -webkit-text-stroke: 1px white;
-    -webkit-text-fill-color: transparent;
 }
 
 #text1 {
-    margin-top: -360px;
+    margin-top: -340px;
     z-index: -1;
     position: relative;
 }
 
 #text2 {
-    margin-top: -48px;
+    margin-top: 32px;
     z-index: 2;
     position: relative;
 }
