@@ -18,6 +18,9 @@ body {
     color: black;
     padding: 25px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 .header {
@@ -160,4 +163,54 @@ body {
     margin-top: -48px;
     z-index: 2;
     position: relative;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 400px 0 0 100px;
+    max-width: 1300px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.testimonials-desc {
+    font-size: 1.25rem;
+    max-width: 600px;
+    position: sticky;
+    top: 200px;
+    height: fit-content;
+    letter-spacing: 0.5px;
+    font-weight: 200;
+}
+
+.testimonials {
+    margin: 0 0 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    width: 100%;
+    margin: 70px 0 0 0;
+}
+
+.quote:first-of-type {
+    margin: 0 0 0 0;
+}
+
+.quote-text {
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+.quote-author {
+    margin: 15px 0 0 0;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.skills-scroll-text {
+    margin: 100px 0 0 0;
 }
