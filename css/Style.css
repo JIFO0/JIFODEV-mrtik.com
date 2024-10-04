@@ -7,14 +7,15 @@ body {
     height: 100%;
     background-color: #000000;
     color: white;
-    --primary-color: #FF4AC3;
+    --primary-purple: #FF4AC3;
     --primary-gray: rgba(255, 255, 255, 0.1);
+    --primary-green: #00BDA5; 
     width: 100%;
 }
 
 .header-banner {
     font-size: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-purple);
     color: black;
     padding: 25px;
     text-align: center;
@@ -42,7 +43,7 @@ body {
 }
 
 .header-dot {
-    background-color: var(--primary-color);
+    background-color: var(--primary-purple);
     border-radius: 90%;
     margin: 4px 0 0 0;
     vertical-align: middle;
@@ -213,4 +214,145 @@ body {
 
 .skills-scroll-text {
     margin: 100px 0 0 0;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 0 0 0;
+}
+
+.course-header-list
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0;
+}
+
+.course-header-list li
+{
+    margin: 0 50px;
+}
+.course-header-list li:first-of-type
+{
+    margin-left: 0;
+}
+
+.course-subheader
+{
+    font-size: 3rem;
+    font-family: Bebas Neue;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.course-main
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.course-text
+{
+    max-width: 20vw;
+}
+
+.purple-text
+{
+    color: var(--primary-purple);
+    margin: 0;
+    padding: 0;
+}
+
+.green-text
+{
+    color: var(--primary-green);
+    margin: 0;
+    padding: 0;
+}
+
+.course-els
+{
+    margin: 15px 0 0 0;
+    padding: 0 0 0 25px;
+}
+
+
+.course-competentions
+{
+    margin: 20px 0 0 0;
+    padding: 0 0 0 35px;
+    font-size: 1rem;
+}
+
+.course-price-container
+{
+    display: flex;
+    gap: 0;
+    margin: 150px 0 0 100px;
+}
+
+.course-price
+{
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+.course-pic-container
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.course-pic
+{
+    position: absolute;
+    width: 60vw;
+    z-index: -1;
+    height: 700px;
+}
+
+.quote-container
+{
+    display: flex;
+    justify-content: right;
+    margin: 200px 150px 0 0;
+    width: 100%;
+}
+
+.quote
+{
+    font-size: 1.5rem;
+    width: 50%;
+    margin: 0 150px 0 0;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    width: 59%;
+    justify-content: space-between;
+    margin: 150px 0 30px 0;
+    align-items: center;
+}
+
+.footer-name
+{
+    font-size: 1.5rem;
+    margin: 0 0 0 50px;
+}
+
+.footer-icon
+{
+    margin: 0 5px;
+}
+.footer-socials:first-of-type
+{
+    margin-left: 0;
 }
