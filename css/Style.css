@@ -196,6 +196,7 @@ body {
 .testimonial-desc-text
 {
     margin: 0;
+    text-align: center;
 }
 
 .testimonials {
@@ -268,6 +269,15 @@ body {
     flex-direction: row;
     justify-content: center;
     margin: 150px 0 0 0;
+    width: 100%;
+}
+
+.course
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .course-header-list
@@ -275,14 +285,16 @@ body {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    flex-wrap: wrap;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     padding: 0;
+    max-width: 80%;
 }
 
 .course-header-list li
 {
-    margin: 0 50px;
+    margin: 20px 40px 0 40px;
 }
 
 .course-header-list li:first-of-type
@@ -294,25 +306,31 @@ body {
 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.course-left
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50vw;
 }
 
 .course-subheader
 {
-    font-size: 1.75rem;
+    font-size: 2.1rem;
     font-family: Bebas Neue;
     font-weight: 200;
-    margin: 10px 0;
+    margin: 5px 0 0 0;
 }
 
 .course-left-main
 {
     display: flex;
     flex-direction: row;
-}
-
-.course-text
-{
-    max-width: 20vw;
+    margin: 20px 0 0 0;
 }
 
 .purple-text
@@ -332,14 +350,20 @@ body {
 .course-els
 {
     margin: 15px 0 0 0;
-    padding: 0 0 0 25px;
+    padding: 0 0 0 15px;
+}
+
+.course-desc
+{
+    font-size: 1rem;
+    width: fit-content;
 }
 
 .course-competentions
 {
     margin: 20px 0 0 0;
-    padding: 0 0 0 35px;
-    font-size: 0.85rem;
+    padding: 0 0 0 20px;
+    font-size: 0.9rem;
 }
 
 .course-right
@@ -376,25 +400,31 @@ body {
     position: absolute;
     width: 60vw;
     z-index: -1;
-    height: 700px;
+    height: 600px;
 }
 
 @media (max-width: 1100px) {
     .course-header-list
     {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .course-header-list li
     {
-        margin: 0 25px;
+        margin: 10px 20px 0 20px;
     }
     .course-subheader
     {
         font-size: 1.3rem;
+        margin: 10px 0 0 0;
+    }
+    .course-left-main
+    {
+        margin: 30px 0 0 0;
     }
     .course-desc
     {
         font-size: 0.75rem;
+
     }
     .course-competentions
     {
@@ -414,43 +444,67 @@ body {
     {
         font-size: 1.8rem;
     }
+    .course-pic-bg
+    {
+        position: absolute;
+        width: 60vw;
+        z-index: -1;
+        height: 475px;
+    }
 }
 
 @media (max-width: 768px) {
     .course-header-list
     {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .course-header-list li
     {
-        margin: 0 12px;
+        margin: 10px 10px 0 10px;
+    }
+    .course-left
+    {
+        max-width: 55%;
     }
     .course-subheader
     {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+    }
+    .course-left-main
+    {
+        margin: 20px 0 0 0;
+        max-width: 80%;
     }
     .course-desc
     {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .course-competentions
     {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
+
     .course-right
     {
         margin: 50px 0 0 0;
     }
     .course-pic
     {
-        margin: 0 0 0 15px;
-        width: 100px;
-        height: 100px;
+        margin: 0 0 0 0;
+        width: 90px;
+        height: 150px;
     }
     .course-price
     {
         font-size: 1rem;
-        margin: 0 0 0 15px;
+        margin: 0 0 0 0;
+    }
+    .course-pic-bg
+    {
+        position: absolute;
+        width: 60vw;
+        z-index: -1;
+        height: 350px;
     }
 }
 
@@ -464,13 +518,13 @@ body {
     padding: 0 10% 0 10%;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 250px 0 0 0;
+    margin: 150px 0 0 0;
 }
 
 .logo
 {
-    width: 180px;
-    height: 140px;
+    width: 162px;
+    height: 126px;
     margin: 30px;
 }
 
@@ -481,8 +535,8 @@ body {
     }
     .logo
     {
-        width: 126px;
-        height: 98px;
+        width: 94.5px;
+        height: 73.5px;
     }
 }
 
@@ -522,7 +576,7 @@ body {
 {
     font-size: 1.25rem;
     margin: 0 0 0 50px;
-    width: 10%;
+    width: 20%;
 }
 
 .footer-icon
@@ -540,7 +594,7 @@ body {
 {
     font-size: 1.25rem;
     margin: 0 50px 0 0;
-    width: 10%;
+    width: 20%;
 }
 
 @media (max-width: 768px) {
@@ -557,7 +611,7 @@ body {
     .footer-name
     {
         width: 30%;
-        margin: 0 0 0 25px;
+        margin: 0 0 0 45px;
     }
 
     .footer-socials
