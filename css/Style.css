@@ -13,6 +13,8 @@ body {
     width: 100%;
 }
 
+/* Header */
+
 .header-banner {
     font-size: 20px;
     background-color: var(--primary-purple);
@@ -39,7 +41,7 @@ body {
 .header-name-container {
     display: flex;
     flex-direction: row;
-    width: 20%;
+    width: 50%;
 }
 
 .header-dot {
@@ -81,6 +83,8 @@ body {
     width: 28px;
     height: 28px;
 }
+
+/* Hero */
 
 .hero-container {
     position: relative;
@@ -166,11 +170,13 @@ body {
     position: relative;
 }
 
+/* Testimonials */
+
 .testimonials-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 400px 0 0 100px;
+    margin: 150px 100px 0 100px;
     max-width: 1300px;
     display: flex;
     align-items: flex-start;
@@ -178,18 +184,25 @@ body {
 
 .testimonials-desc {
     font-size: 1.25rem;
-    max-width: 600px;
+    max-width: 50%;
     position: sticky;
-    top: 200px;
     height: fit-content;
     letter-spacing: 0.5px;
     font-weight: 200;
+    margin: 0;
+    top: 250px;
+}
+
+.testimonial-desc-text
+{
+    margin: 0;
 }
 
 .testimonials {
     margin: 0 0 0 100px;
     display: flex;
     flex-direction: column;
+    max-width: 30%;
 }
 
 .quote {
@@ -212,15 +225,49 @@ body {
     font-weight: 900;
 }
 
-.skills-scroll-text {
-    margin: 100px 0 0 0;
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        margin: 150px 0 0 0;
+        max-width: 100%;
+        align-items: center!important;
+    }
+    
+    .testimonials-desc {
+        position: relative;
+        top: 0;
+        width: 80%;
+        max-width: 100%;
+    }
+    
+    .testimonials {
+        margin: 50px 0 0 0;
+        width: 70%;
+        max-width: 100%;
+        justify-content: start;
+    }
+
+    .quote
+    {
+        margin: 45px 0 0 0;
+    }
+
+    .quote-text {
+        font-size: 1.15rem;
+    }
+}
+
+/* Courses */
+
+.course-scroll-text {
+    margin: 150px 0 0 0;
 }
 
 .course-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 100px 0 0 0;
+    margin: 150px 0 0 0;
 }
 
 .course-header-list
@@ -237,20 +284,27 @@ body {
 {
     margin: 0 50px;
 }
+
 .course-header-list li:first-of-type
 {
     margin-left: 0;
 }
 
+.course-main
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .course-subheader
 {
-    font-size: 3rem;
+    font-size: 1.75rem;
     font-family: Bebas Neue;
     font-weight: 200;
     margin: 10px 0;
 }
 
-.course-main
+.course-left-main
 {
     display: flex;
     flex-direction: row;
@@ -281,19 +335,27 @@ body {
     padding: 0 0 0 25px;
 }
 
-
 .course-competentions
 {
     margin: 20px 0 0 0;
     padding: 0 0 0 35px;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
-.course-price-container
+.course-right
 {
     display: flex;
     gap: 0;
-    margin: 150px 0 0 100px;
+    flex-direction: column;
+    margin: 50px 0 0 25px;
+    max-width: 40%;
+}
+
+.course-pic
+{
+    width: 300px;
+    height: 300px;
+    margin: 0 0 0 75px;
 }
 
 .course-price
@@ -302,14 +364,14 @@ body {
     margin: 0;
 }
 
-.course-pic-container
+.course-pic-bg-container
 {
     position: absolute;
     display: flex;
     justify-content: center;
 }
 
-.course-pic
+.course-pic-bg
 {
     position: absolute;
     width: 60vw;
@@ -317,26 +379,140 @@ body {
     height: 700px;
 }
 
-.quote-container
+@media (max-width: 1100px) {
+    .course-header-list
+    {
+        font-size: 1rem;
+    }
+    .course-header-list li
+    {
+        margin: 0 25px;
+    }
+    .course-subheader
+    {
+        font-size: 1.3rem;
+    }
+    .course-desc
+    {
+        font-size: 0.75rem;
+    }
+    .course-competentions
+    {
+        font-size: 0.7rem;
+    }
+    .course-right
+    {
+        margin: 50px 0 0 0;
+    }
+    .course-pic
+    {
+        margin: 0 0 0 15px;
+        width: 200px;
+        height: 200px;
+    }
+    .course-price
+    {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-header-list
+    {
+        font-size: 0.6rem;
+    }
+    .course-header-list li
+    {
+        margin: 0 12px;
+    }
+    .course-subheader
+    {
+        font-size: 0.8rem;
+    }
+    .course-desc
+    {
+        font-size: 0.5rem;
+    }
+    .course-competentions
+    {
+        font-size: 0.4rem;
+    }
+    .course-right
+    {
+        margin: 50px 0 0 0;
+    }
+    .course-pic
+    {
+        margin: 0 0 0 15px;
+        width: 100px;
+        height: 100px;
+    }
+    .course-price
+    {
+        font-size: 1rem;
+        margin: 0 0 0 15px;
+    }
+}
+
+/* Logos */
+
+.logo-container
+{
+    display: flex;
+    justify-content: center;
+    width: 100;
+    padding: 0 10% 0 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 250px 0 0 0;
+}
+
+.logo
+{
+    width: 180px;
+    height: 140px;
+    margin: 30px;
+}
+
+@media (max-width: 768px) {
+    .logo-container
+    {
+        margin: 50px 0 0 0;
+    }
+    .logo
+    {
+        width: 126px;
+        height: 98px;
+    }
+}
+
+/* Footer */
+
+.footer-scroll-text
+{
+    margin: 150px 0 0 0;
+}
+
+.footer-quote-container
 {
     display: flex;
     justify-content: right;
-    margin: 200px 150px 0 0;
+    margin: 150px 0 0 0;
     width: 100%;
 }
 
-.quote
+.footer-quote
 {
     font-size: 1.5rem;
-    width: 50%;
-    margin: 0 150px 0 0;
+    width: 60%;
+    padding: 0 150px 0 0;
 }
 
 .footer
 {
     display: flex;
     flex-direction: row;
-    width: 59%;
+    width: 100%;
     justify-content: space-between;
     margin: 150px 0 30px 0;
     align-items: center;
@@ -344,15 +520,58 @@ body {
 
 .footer-name
 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0 0 0 50px;
+    width: 10%;
 }
 
 .footer-icon
 {
     margin: 0 5px;
+    width: 35px;
 }
+
 .footer-socials:first-of-type
 {
     margin-left: 0;
+}
+
+.footer-empty
+{
+    font-size: 1.25rem;
+    margin: 0 50px 0 0;
+    width: 10%;
+}
+
+@media (max-width: 768px) {
+    .footer-quote-container
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-quote
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .footer-name
+    {
+        width: 30%;
+        margin: 0 0 0 25px;
+    }
+
+    .footer-socials
+    {
+        margin: 0 25px 0 0;
+    }
+
+    .footer-icon
+    {
+        width: 30px;
+    }
+
+    .footer-empty
+    {
+        display: none;
+    }   
 }
